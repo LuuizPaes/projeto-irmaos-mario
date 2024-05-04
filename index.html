@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mario Bros</title>
+
+</head>
+
+<body>
+
+    <div class="mascara-formulario" onclick="cliqueiNaMascara()"></div>
+
+    <div class="header">
+        <img src="./img/logo-header.png" alt="logo mario">
+        <a>Home</a>
+        <a>Nossos Serviços</a>
+        <a onclick="faleConosco()">Fale Conosco</a>
+
+    </div>
+
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <img src="./img/logo.png" alt="logo do mario bros" class="logo-mario">
+            <p>🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Com Estilo! 🔧 </p>
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
+
+            <button onclick="cliqueiNoBotao()">Entre em Contato</button>
+
+        </div>
+        <div>
+
+            <img src="./img/mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
+        </div>
+
+    </div>
+
+    <div class="caixa-video">
+
+        <video src="./img/video.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=5515997088751&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20os%20irm%C3%A3os%20mario."
+        class="link-whatsapp">
+        <img src="./img/whatsapp.png" alt="link para whatsapp">
+
+    </a>
+
+    <form class="formulario-fale-conosco" action="https://formcarry.com/s/3xvR6kVBFbt" method="POST"
+        enctype="multipart/form-data">
+
+        <input placeholder="Seu nome" type="text" name="nome">
+        <input placeholder="Seu Telefone" type="tel" name="telefone">
+        <textarea placeholder="Digite seu problema" name="duvida"></textarea>
+        <button type="submit">Pedir Orçamento</button>
+    </form>
+
+
+
+
+
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
