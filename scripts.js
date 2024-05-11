@@ -22,3 +22,10 @@ function faleConosco() {
     form.style.tranform = "translateX(-50%)"
     mascara.style.visibility = "visible"
 }
+
+const button = document.querySelector('.audio-button')
+button.addEventListener('click', function () {
+    const audioMario = document.querySelector('#audio-mario')
+    audioMario.currentTime = 0
+    audioMario.play()
+})
